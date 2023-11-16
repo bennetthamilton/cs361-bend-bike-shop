@@ -1,4 +1,8 @@
-# Bike
+# Title: Bike
+# Name: Bennett Hamilton
+# Date: 11/16/23
+# Description: Practice using principles from Chapter 2 Single Responsibility Rule in 
+#              "Practical Object-Oriented Design in Ruby" by Sandi Metz
 
 class Bike
 
