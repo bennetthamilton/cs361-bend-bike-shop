@@ -1,8 +1,4 @@
-# Title: Bike
-# Name: Bennett Hamilton
-# Date: 11/16/23
-# Description: Practice using principles from Chapter 2 Single Responsibility Rule in 
-#              "Practical Object-Oriented Design in Ruby" by Sandi Metz
+# Bike
 
 class Bike
 
@@ -17,11 +13,22 @@ class Bike
     @price = price
     @weight = weight
     @rented = rented
-    @cargo_contents = []
   end
 
   def rent!
     self.rented = true
+  end
+
+end
+
+class CargoHandler
+
+  MAX_CARGO_ITEMS = 10
+
+  attr_accessor :cargo_contents
+
+  def initialize
+    @cargo_contents = []
   end
 
   def add_cargo(item)
